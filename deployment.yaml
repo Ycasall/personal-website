@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: website-personal  # Nombre del contenedor
-          image: efreway/personal-website:v1  # Imagen en Docker Hub
+          image: efreway/personal-website:v2  # Imagen en Docker Hub
           ports:
             - containerPort: 8080  # Puerto en el que el contenedor va a escuchar (para Nginx, típicamente es el puerto 80)
           resources:
