@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: website-personal-deployment  # Nombre del Deployment
+spec:
+  replicas: 1  # Número de réplicas del pod
+  selector:
+    matchLabels:
+      app: website-personal  # Etiqueta para identificar este deployment
+  template:
+    metadata:
+      labels:
+        app: website-personal  # Etiqueta para identificar los pods que pertenecen a este deployment
+    spec:
+      containers:
+        - name: website-personal  # Nombre del contenedor
+          image: efreway/personal-website:v1  # Imagen en Docker Hub
+          ports:
+            - containerPort: 80  # Puerto en el que el contenedor va a escuchar (para Nginx, típicamente es el puerto 80)
+          resources:
+            limits:
+              memory: "512Mi"  # Límite de memoria
+              cpu: "500m"  # Límite de CPU
+          securityContext:
+            privileged: false  # No estamos usando privilegios elevados
