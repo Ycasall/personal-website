@@ -16,7 +16,7 @@ spec:
         - name: website-personal  # Nombre del contenedor
           image: efreway/personal-website:v2  # Imagen en Docker Hub
           ports:
-            - containerPort: 8080  # Puerto en el que el contenedor va a escuchar (para Nginx, típicamente es el puerto 80)
+            - containerPort: 80  # Puerto en el que el contenedor va a escuchar (para Nginx, típicamente es el puerto 80)
           resources:
             limits:
               memory: "512Mi"  # Límite de memoria
