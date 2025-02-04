@@ -42,5 +42,5 @@ Para cualquier duda o sugerencia, puedes contactarme en:
 🔗 **LinkedIn:** [Perfil](https://linkedin.com/in/yhon-fredy-casallas)
 
 ---
-**© 2024 - Proyecto de Prueba Técnica para el Banco Pichincha**
+**© 2025 - Proyecto de Prueba Técnica para el Banco Pichincha**
 
